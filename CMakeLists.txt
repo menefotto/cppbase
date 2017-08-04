@@ -20,13 +20,13 @@ set(CMAKE_LINKER_FLAGS "-stdlib=libc++ -lc++abi")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) 
 
 #add queue benchmark
-add_executable(cppbase_bench ../tests/queue_bench.cpp)
-target_link_libraries(cppbase_bench pthread benchmark)
+#add_executable(cppbase_bench ../tests/queue_bench.cpp)
+#target_link_libraries(cppbase_bench pthread benchmark)
 
 
 #add cppbase executable
 add_executable(cppbase ../src/main.cpp)
-target_link_libraries(cppbase pthread)
+target_link_libraries(cppbase pthread fmt)
 
 
 
